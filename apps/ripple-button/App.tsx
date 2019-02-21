@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 // import RippleButton from './rippleButton'
 // @ts-ignore
-import SVGInline from 'react-svg-inline';
+import SVGInline from 'react-svg-inline'; // eslint-disable-line no-unused-vars
 
 // ______________________________________________________
 //
@@ -13,8 +13,8 @@ type Props = { className?: string };
 //
 // @ View
 
-const View: React.FC<Props> = props => (
-  <div className={props.className}>
+const View: React.FC<Props> = ({ className }) => (
+  <div className={className}>
     rippleButton
     {/* <RippleButton
       width={'180px'}
