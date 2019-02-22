@@ -34,7 +34,7 @@ module.exports = {
   rules: {
     'import/no-extraneous-dependencies': [
       'error',
-      { devDependencies: ['**/*.spec.tsx'] },
+      { devDependencies: ['**/*.spec.ts', '**/*.spec.tsx'] },
     ],
     'import/prefer-default-export': false,
     'no-return-assign': 0,
