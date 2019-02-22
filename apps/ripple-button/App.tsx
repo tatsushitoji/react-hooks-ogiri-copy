@@ -1,57 +1,55 @@
 import * as React from 'react';
 import styled from 'styled-components';
-// import RippleButton from './rippleButton'
-// @ts-ignore
-import SVGInline from 'react-svg-inline'; // eslint-disable-line no-unused-vars
+import RippleButton from './components/rippleButton';
+
+// TODO: enable SVG bundle / jest
+// import SVGInline from 'react-svg-inline';
+// import Icon from '-!svg-react-loader!./assets/down1.svg'; // eslint-disable-line
+// const down2 = require('./assets/down2.svg');
+// const up1 = require('./assets/up1.svg');
 
 // ______________________________________________________
 //
 // @ Types
 
 type Props = { className?: string };
+
 // ______________________________________________________
 //
 // @ View
 
 const View: React.FC<Props> = ({ className }) => (
   <div className={className}>
-    rippleButton
-    {/* <RippleButton
-      width={'180px'}
-      heihgt={'64px'}
-      borderRadius={'10px'}
-      backgroundColor={'#7089b9'}
+    <RippleButton
+      width="180px"
+      heihgt="64px"
+      borderRadius="10px"
+      backgroundColor="#7089b9"
       effectSize={280}
+      dataTestId="button1"
     >
-      <span className="children">
-        <SVGInline svg={require('../assets/down1.svg')} />
-        DOWNLOAD
-      </span>
+      <span className="children">DOWNLOAD</span>
     </RippleButton>
     <RippleButton
-      width={'160px'}
-      heihgt={'64px'}
-      borderRadius={'5px'}
-      backgroundColor={'#009fff'}
+      width="160px"
+      heihgt="64px"
+      borderRadius="5px"
+      backgroundColor="#009fff"
       effectSize={160}
+      dataTestId="button2"
     >
-      <span className="children">
-        <SVGInline svg={require('../assets/up1.svg')} />
-        UPLOAD
-      </span>
+      <span className="children">UPLOAD</span>
     </RippleButton>
     <RippleButton
-      width={'170px'}
-      heihgt={'64px'}
-      borderRadius={'37px'}
-      backgroundColor={'#00d9ff'}
+      width="170px"
+      heihgt="64px"
+      borderRadius="37px"
+      backgroundColor="#00d9ff"
       effectSize={320}
+      dataTestId="button3"
     >
-      <span className="children">
-        <SVGInline svg={require('../assets/down2.svg')} />
-        DOWNLOAD
-      </span>
-    </RippleButton> */}
+      <span className="children">DOWNLOAD</span>
+    </RippleButton>
   </div>
 );
 // ______________________________________________________
