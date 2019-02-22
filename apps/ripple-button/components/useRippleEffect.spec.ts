@@ -33,7 +33,7 @@ describe('ripple-button/components/useRippleEffect', () => {
       pageX: 0,
       pageY: 0,
       persist: jest.fn(),
-    } as any;
+    } as any; // TODO: more strict
     testHook(
       () =>
         ({ effectStyle, handleMouseDown } = useRippleEffect({
@@ -71,7 +71,7 @@ describe('ripple-button/components/useRippleEffect', () => {
       pageX: 0,
       pageY: 0,
       persist: jest.fn(),
-    } as any;
+    } as any; // TODO: more strict
     testHook(
       () =>
         ({ effectStyle, handleMouseUp } = useRippleEffect({
