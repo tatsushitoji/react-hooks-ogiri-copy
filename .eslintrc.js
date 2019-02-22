@@ -38,6 +38,8 @@ module.exports = {
     ],
     'import/prefer-default-export': false,
     'no-return-assign': 0,
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'warn',
     'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
     'react/prop-types': false,
     'react-hooks/rules-of-hooks': 'error',
