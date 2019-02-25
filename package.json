@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "1203": "parcel apps/ripple-button/index.html watch",
+    "1204": "parcel apps/toggle-switch/index.html watch",
     "eslint": "eslint --cache './**/*.{ts,tsx}'",
     "test": "jest"
   },
