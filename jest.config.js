@@ -9,5 +9,5 @@ module.exports = {
     '^lodash-es$': 'lodash',
   },
   // "snapshotSerializers": ["enzyme-to-json/serializer"],
-  // setupTestFrameworkScriptFile: '<rootDir>setupTests.ts',
+  setupFilesAfterEnv: ['<rootDir>setupTests.ts'],
 };
